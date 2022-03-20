@@ -1,0 +1,37 @@
+--->NAVODILA/INFO ZA UPORABO SPLETNE STRANI<---
+
+-------------------------------------------------------------------------------------------------------------
+Spletna stran predstavlja psarno po imenu Rottweiler Anguinus (anguinus = človeška ribica). V tej psarni je
+ducat psov, jaz sem za stran izbral samo 2 psa (Eboran in Fang) in 2 psice (Bia in Foa), ter leglo I.
+Cilj je bil narediti spletno stran, ki bi bila za uporabnika kar se da preprosta za uporabo a obenem zanimiva
+in prilagojena tako za računalnik kot tudi za mobilni telefon (uporabil sem Media Query). Velikosti displaya
+se tako prilagajajo besedilo, naslovi, slike in tabele. Ko klikneš ali pritisneš na sliko se ti pokaže čez
+cel ekran. Ker je maximalno 5 MB sem nekatere slike skompresiral in so izgubile kvaliteto, ter nekatere tudi 
+odstranil. Ampak glavna struktura strani ostaja enaka.
+
+Spletna stran deluje, če se iz Zip arhiva da mapa Leskovec na XAMPP -> htdocs mesto.
+-------------------------------------------------------------------------------------------------------------
+Spletna stran vsebuje 8 glavnih podstrani:
+
+--> Domov  (index.html)
+--> O nas  (onas.html)
+--> Novice  (novice.html)
+--> Psi  (psi.html):
+	-> Eboran  (eboran.html)
+	-> Fang  (fang.html)
+--> Psice  (psice.html)
+	-> Bia  (bia.html)
+	-> Foa  (foa.html)
+--> Mladiči/Na prodaj  (mladici.html)
+--> Svet  (svet.html)
+--> Kontakt  (kontakt.html)
+
+------------------------------------------------------------------------------------------------------------
+    Kontakt stran ima obrazec, kjer uporabnik poda svoje podatke. Če je obrazec pravilno izpolnjen (preverjanje
+    elektronske pošte, preverjanje številskih vnosov v polje Telefon, ter dolžine znakov pri sporočilu,
+    uporabniškem imenu in geslu ) potem uporabnik dobi pozitiven odgovor.
+    Uporabnik je avtomatsko registriran v podatkovno bazo obiskovalcistrani v phpadmin-u. Odgovor dobi tudi,
+    če je obrazec nepravilno izpolnjen, je le opozorjen kje je storil napake. V obeh primerih preidemo
+    iz kontakt.html v odgovor.php (pravilen/nepravilen). Odgovor je tvorjen s pomočjo php jezika (validacija.php,
+    pravilenodgovor.php in nepopolniobrazec.php).
+-------------------------------------------------------------------------------------------------------------

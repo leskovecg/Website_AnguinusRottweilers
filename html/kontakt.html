@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gasper Leskovec">
+  <title>Anguinus ROTTWEILER</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="/leskovec/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="/leskovec/slike/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap&subset=latin-ext" rel="stylesheet">
+  <!--<script src="javasc.js"></script>-->
+</head>
+
+
+<body>
+
+<div class="navigacija" id="navigacijaa">
+  <a href="/leskovec/index.html" class="active">DOMOV</a>
+  <a href="onas.html">O NAS</a>
+  <a href="novice.html">NOVICE</a>
+  <a href="psi.html">PSI</a>
+  <a href="psice.html">PSICE</a>
+  <a href="mladici.html">MLADIČI & NA PRODAJ</a>
+  <a href="svet.html">SVET</a>
+  <a href="kontakt.html">KONTAKT</a>
+  <a href="/leskovec/index.html"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div id="header">
+  <img src="/leskovec/slike/header.png" width="100%" alt="header">
+</div>
+
+<section id="contact-section">
+<div class="container" style="padding-top:30px;">
+  <h2>Stopite v kontakt z nami</h2>
+    <p>Pošljite nam sporočilo in ostanite na tekočem z novicami</p>
+    <div class="contact-form">
+
+      <!--first grid-->
+      <div>
+        <i class="fa fa-user"></i><span class="form-info">Gašper Leskovec</span><br>
+        <a href="/leskovec/index.html" style="text-decoration:none;"><i class="fa fa-home"></i></a><span class="form-info">www.rottweiler-anguinus.eu</span><br>
+        <i class="fa fa-map-marker"></i><span class="form-info">Kettejeva 8, 6230 Postojna, Slovenia, Europe</span><br>
+        <i class="fa fa-phone"></i><span class="form-info">+386 40 268 451</span><br>
+        <a href="mailto:leskovecg@gmail.com" target="_top"><i class="fa fa-envelope"></i></a><span class="form-info">leskovecg@gmail.com</span><br>
+      </div>
+      <!--second grid-->
+      <div class="labels">
+        <form action="/leskovec/php/odgovor.php" form method="POST">
+
+          <label for="fname"></label>
+          <input type="text" name="ime" placeholder="Ime" required>
+          <span class="error">*</span>
+
+          <label for="fname"></label>
+          <input type="text" name="priimek" placeholder="Priimek" required>
+          <span class="error">*</span>
+
+          <label for="lname"></label>
+          <input type="text" name="email" placeholder="E-mail" required>
+          <span class="error">*</span>
+
+
+          <label for="lname"></label>
+          <input type="text" name="telefon" placeholder="Telefon" required>
+          <span class="error">*</span>
+
+          <label for="subject"></label>
+          <textarea name="sporocilo" placeholder="Pišite nam.." style="height:200px" required></textarea>
+          <span class="error">*</span>
+
+          <label for="lname"></label>
+          <input type="text" name="upIme" placeholder="uporabnik" required>
+          <span class="error">*</span>
+
+          <label for="lname"></label>
+          <input type="password" name="geslo" placeholder="geslo" required>
+          <span class="error">*</span>
+
+          <button class="submit">Pošlji</button>
+        </form>
+      </div>
+    </div>
+</div>
+</section>
+
+<div class="stopi_v_kontakt">
+  <div class="nas"><h2>Poveži se z nami</h2></div>
+  <!-- logoti omrežij -->
+  <div class="logoti">
+    <a href="https://sl-si.facebook.com/anguinus.rottweilers" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/anguinus_rottweiler/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UC3EM7sV9wr00JaYcWLI1CTw" target="_blank" class="fa fa-youtube"></a>
+  </div>
+</div>
+
+<div id="footer">
+  <img src="/leskovec/slike/footer.png" width="100%" alt="footer">
+</div>
+
+</body>
+</html>

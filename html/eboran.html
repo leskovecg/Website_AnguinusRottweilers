@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gasper Leskovec">
+  <title>Anguinus ROTTWEILER</title>
+  <link rel="icon" href="/leskovec/slike/favicon.png">
+  <link href="/leskovec/css/style.css" rel="stylesheet" type="text/css">
+  <script src="/leskovec/js/javasc.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+<div class="navigacija" id="navigacijaa">
+  <a href="/leskovec/index.html" class="active">DOMOV</a>
+  <a href="onas.html">O NAS</a>
+  <a href="novice.html">NOVICE</a>
+  <a href="psi.html">PSI</a>
+  <a href="psice.html">PSICE</a>
+  <a href="mladici.html">MLADIČI & NA PRODAJ</a>
+  <a href="svet.html">SVET</a>
+  <a href="kontakt.html">KONTAKT</a>
+  <a href="/leskovec/index.html"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div id="header">
+  <img src="/leskovec/slike/header.png" width="100%" alt="header">
+</div>
+<div class="box">
+  <div class="box1">
+  <div class="slika">
+      <img height="500px" width="400px" src="/leskovec/slike/EBORAN/naslovna.jpg" alt="profilna Eboran">
+  </div>
+  <div class="content">
+    <p><u><h3>EBORAN ANGUINUS</h3></u><br>
+      <b>DOB:</b> 6.6.2018<br>
+      <b>SIR:</b> VITUS VOM HAUSE NEUBRAND<br>
+      <b>DAM:</b> BIA ANGUINUS<br>
+      <b>MICROCHIP:</b> 705100000100160<br>
+      <b>PEDIGREE No. </b>SLRRW 003682<br>
+      <b>Eye color:</b> <br>
+      <b>Height:</b> 65 cm<br>
+      <b>HD:</b> FREE<br>
+      <b>ED:</b> FREE<br>
+      <b>JLPP:</b> FREE<br>
+      <b>DNA:</b> Certificat (blood)<br>
+      <b>SLO Certificat:</b><br>
+    </p>
+  </div>
+</div>
+
+
+
+
+<div class="containerr">
+<div class="tab">
+<button class="tablinks" onclick="openPage(event, 'Pedigree')" id="defaultOpen">Pedigre</button>
+<button class="tablinks" onclick="openPage(event, 'Certificats')" >Certifikati</button>
+<button class="tablinks" onclick="openPage(event, 'Showss')">Šovi</button>
+<button class="tablinks" onclick="openPage(event, 'Gallery')">Galerija</button>
+<button class="tablinks" onclick="openPage(event, 'Videos')">Video</button>
+</div>
+
+<div id="Pedigree" class="tabcontent">
+  <img src="/leskovec/slike/EBORAN/pedigree.jpg" alt="pedigree" width="363px" height="254px" onclick="onClick(this)">
+</div>
+
+<div id="Certificats" class="tabcontent">
+  <img src="/leskovec/slike/EBORAN/certificats1.jpg" alt="certifikat 1" width="230px" height="330px" onclick="onClick(this)">
+  <img src="/leskovec/slike/EBORAN/certificats5.jpg" alt="certifikat 3" width="410px" height="330px" onclick="onClick(this)">
+  <img src="/leskovec/slike/EBORAN/certificats6.jpg" alt="certifikat 4" width="410px" height="330px" onclick="onClick(this)">
+  <img src="/leskovec/slike/EBORAN/certificats4.jpg" alt="certifikat 6" width="465px" height="350px" onclick="onClick(this)">
+</div>
+
+<div id="Showss" class="tabcontent" style="overflow-x:auto;width:100%;">
+  <table id="shows">
+ <tr>
+    <th> DATE </th>
+    <th> SHOW </th>
+    <th> CLASS </th>
+    <th> RESULT </th>
+    <th> JUDGE </th>
+ </tr>
+ <tr>
+    <td> 22.2.2020 </td>
+    <td> CACIB WINTER WINNER (SI) </td>
+    <td>  intermedia class </td>
+    <td>   V1 </td>
+    <td>   Ivo Ingriffia (IT) </td>
+ </tr>
+ <tr>
+    <td> 23.2.2020 </td>
+    <td> CACIB WINTER WINNER (SI)   </td>
+    <td> intermedia class</td>
+    <td> V1, CAC, CACIB, BOB WINTER WINNER </td>
+    <td> Cvetka Bogovčič (SI)  </td>
+ </tr>
+  </table>
+</div>
+
+
+
+<div id="modal" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <div class="modal-content">
+  <img id="img" style="max-width:100%">
+  </div>
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <div class="galerija">
+    <img src="/leskovec/slike/EBORAN/2.jpg" alt="slika Eboran" width="212px" height="318px" onclick="onClick(this)">
+    <img src="/leskovec/slike/EBORAN/3.jpg" alt="slika Eboran" width="212px" height="318px" onclick="onClick(this)"><br>
+    <img src="/leskovec/slike/EBORAN/4.jpg" alt="slika Eboran" width="477px" height="318px" onclick="onClick(this)">
+    <img src="/leskovec/slike/EBORAN/5.jpg" alt="slika Eboran" width="477px" height="318px" onclick="onClick(this)">
+  </div>
+</div>
+
+
+<div id="Videos" class="tabcontent"></div>
+</div>
+</div>
+
+
+<script src="/leskovec/js/javasc.js"></script>
+
+
+<div id="footer">
+  <img src="/leskovec/slike/footer.png" width="100%" alt="footer">
+</div>
+
+</body>
+</html>

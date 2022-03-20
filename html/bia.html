@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gasper Leskovec">
+  <title>Anguinus ROTTWEILER</title>
+  <link rel="icon" href="/leskovec/slike/favicon.png">
+  <link href="/leskovec/css/style.css" rel="stylesheet" type="text/css">
+  <script src="/leskovec/js/javasc.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+<div class="navigacija" id="navigacijaa">
+  <a href="/leskovec/index.html" class="active">DOMOV</a>
+  <a href="onas.html">O NAS</a>
+  <a href="novice.html">NOVICE</a>
+  <a href="psi.html">PSI</a>
+  <a href="psice.html">PSICE</a>
+  <a href="mladici.html">MLADIČI & NA PRODAJ</a>
+  <a href="svet.html">SVET</a>
+  <a href="kontakt.html">KONTAKT</a>
+  <a href="/leskovec/index.html"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div id="header">
+  <img src="/leskovec/slike/header.png" width="100%" alt="header">
+</div>
+
+<div class="box">
+<div class="box1">
+  <div class="slika">
+      <img src="/leskovec/slike/BIA/naslovna.png" alt="psica Bia">
+  </div>
+  <div class="content">
+    <p><u><h3>BIA ANGUINUS</h3></u><br>
+      <b>DOB:</b> 29.2.2016 <br>
+      <b>SIR:</b> EDGE VOM CARRABBA HAUS <br>
+      <b>DAM:</b> PARIS ANGUINUS <br>
+      <b>MICROCHIP:</b> 705100000082208 <br>
+      <b>PEDIGREE No. </b> SLRRW 003543 <br>
+      <b>Eye color:</b> 2A <br>
+      <b>Height:</b> 60cm<br>
+      <b>HD:</b> +/- <br>
+      <b>ED:</b> FREE<br>
+      <b>JLPP:</b> FREE<br>
+      <b>DNA:</b> Certificat (blood)<br>
+      <b>SLO Certificat:</b> BH, ZTP<br>
+    </p>
+  </div>
+  </div>
+
+<div class="containerr">
+<div class="tab">
+<button class="tablinks" onclick="openPage(event, 'Pedigree')" id="defaultOpen">Pedigre</button>
+<button class="tablinks" onclick="openPage(event, 'Certificats')">Certifikati</button>
+<button class="tablinks" onclick="openPage(event, 'Showss')">Šovi</button>
+<button class="tablinks" onclick="openPage(event, 'Gallery')">Galerija</button>
+<button class="tablinks" onclick="openPage(event, 'Videos')">Video</button>
+</div>
+
+<div id="Pedigree" class="tabcontent">
+  <img src="/leskovec/slike/BIA/pedigree.jpg" width="364.7px" height="259.4px" onclick="onClick(this)" alt="pedigree">
+</div>
+
+<div id="Certificats" class="tabcontent">
+  <img src="/leskovec/slike/BIA/certificats1.jpg" alt="certifikat 1" width="230px" height="330px" onclick="onClick(this)">
+  <img src="/leskovec/slike/BIA/certificats2.jpg" alt="certifikat 2" width="230px" height="330px" onclick="onClick(this)">
+</div>
+
+<div id="Showss" class="tabcontent" style="overflow-x:auto;width:100%;">
+  <table id="shows">
+ <tr>
+    <th> DATE </th>
+    <th> SHOW </th>
+    <th> CLASS </th>
+    <th> RESULT </th>
+    <th> JUDGE </th>
+ </tr>
+ <tr>
+    <td> 13.5.2017 </td>
+    <td> 11. CROATIAN KLUBSIEGER (HR) </td>
+    <td> young class (9-15) </td>
+    <td> V3 </td>
+    <td> Igor Dubovenko (UKU) </td>
+ </tr>
+ <tr>
+    <td> 24.6.2017 </td>
+    <td> INT. DOGSHOW BLED (SI) </td>
+    <td> young class </td>
+    <td> V2 </td>
+    <td> J. Gajewski (PL) </td>
+ </tr>
+ <tr>
+    <td> 25.6.2017 </td>
+    <td> INT. DOGSHOW BLED (SI) </td>
+    <td> young class </td>
+    <td> V1, JUNIOR WINNER BEST FEMALE, BOS </td>
+    <td> Peter F. Berchold (A) </td>
+ </tr>
+ <tr>
+    <td> 27.8.2017  </td>
+    <td> CAC TRBOVLJE (SI) </td>
+    <td> young class </td>
+    <td> V1, JUNIOR WINNER BEST FEMALE </td>
+    <td> Csaba Pettko (HU) </td>
+ </tr>
+ <tr>
+    <td> 7.10.2017  </td>
+    <td> INT. DOGSHOW LIPICA (SI) </td>
+    <td> intermadia class </td>
+    <td> V1, CAC </td>
+    <td> Olga Šinko Kupriyanova (SI) </td>
+ </tr>
+ <tr>
+    <td> 17.2.2018  </td>
+    <td> INT. DOGSHOW CELJE (SI) </td>
+    <td> intermadia class </td>
+    <td> V1, CAC </td>
+    <td> Suncica Lazic (RS) </td>
+ </tr>
+  </table>
+
+</div>
+
+
+
+<div id="modal" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <div class="modal-content">
+  <img id="img" style="max-width:100%">
+  </div>
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <div class="galerija">
+    <img src="/leskovec/slike/BIA/1.jpg" alt="Rottweiler Bia, slika 1" width="270px" height="300px" onclick="onClick(this)">
+    <img src="/leskovec/slike/BIA/2.jpg" alt="Rottweiler Bia, slika 2" width="185px" height="300px" onclick="onClick(this)">
+    <img src="/leskovec/slike/BIA/3.jpg" alt="Rottweiler Bia, slika 3" width="450px" height="300px" onclick="onClick(this)"><br>
+    <img src="/leskovec/slike/BIA/4.jpg" alt="Rottweiler Bia, slika 4" width="211px" height="300px" onclick="onClick(this)">
+    <img src="/leskovec/slike/BIA/5.jpg" alt="Rottweiler Bia, slika 5" width="280px" height="300px" onclick="onClick(this)">
+    <img src="/leskovec/slike/BIA/6.jpg" alt="Rottweiler Bia, slika 6" width="415px" height="300px" onclick="onClick(this)">
+  </div>
+</div>
+
+<div id="Videos" class="tabcontent">
+  <iframe width="300px" height="170px" style="max-width:100%" src="https://www.youtube.com/embed/KldtEj8X8Tk" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="300px" height="170px" style="max-width:100%" src="https://www.youtube.com/embed/e-qWAOAHOB8" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="300px" height="170px" style="max-width:100%" src="https://www.youtube.com/embed/wPtEtU0DLiE" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+
+<script src="/leskovec/js/javasc.js"></script>
+
+<div id="footer">
+  <img src="/leskovec/slike/footer.png" width="100%" alt="footer">
+</div>
+
+</body>
+</html>
